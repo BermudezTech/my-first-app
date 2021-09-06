@@ -23,7 +23,7 @@ export default class NewTask extends Component {
   render() {
     return (
       <div>
-        <form className="formulario" onSubmit={this.onSubmit}>
+        <form className="formulario" autocomplete="off" onSubmit={this.onSubmit}>
           <input
             type="text"
             name="titulo"

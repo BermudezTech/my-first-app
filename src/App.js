@@ -49,17 +49,17 @@ class App extends Component {
           <div className="header">
             <h2>Mis tareas</h2>
             <div>
-              <Link className="enlace" to="/">
+              <Link className="enlace" to="/my-first-app/">
                 Tareas
               </Link>
-              <Link className="enlace" to="/notes">
+              <Link className="enlace" to="/my-first-app/notes">
                 Notas
               </Link>
             </div>
           </div>
           <Route
             exact
-            path="/"
+            path="/my-first-app/"
             render={() => {
               return (
                 <Tareas
@@ -72,7 +72,7 @@ class App extends Component {
             }}
           ></Route>
           <Route
-            path="/notes"
+            path="/my-first-app/notes"
             render={() => {
               return <Notas />;
             }}
